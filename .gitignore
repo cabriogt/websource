@@ -5,12 +5,17 @@
 .classpath
 .project
 Servers/
+*/.gitignore
+
 ch1/.gitignore
 ch2/.gitignore
+
 ch1/src/main/Webapp/Content/META-INF
 ch2/src/main/Webapp/Content/META-INF
 ch1/src/main/webapp/META-INF/MANIFEST.MF
 ch2/src/main/webapp/META-INF/MANIFEST.MF
+
+*/webapp/Meta-INF
 
 
 ### Eclipse ###

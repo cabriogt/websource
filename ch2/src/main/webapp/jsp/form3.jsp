@@ -22,7 +22,7 @@ padding:5px;
 </style>
 </head>
 <body>
-	<form action="/infoServlet" method="post">
+	<form action="/info" method="post">
       <div>
         <label for="userid">Id</label>
         <input type="text" name="userid" id="userid" />
