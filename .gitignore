@@ -6,6 +6,7 @@
 .project
 Servers/
 */.gitignore
+*/.Webapp/Content/META-INF
 
 ch1/.gitignore
 ch2/.gitignore

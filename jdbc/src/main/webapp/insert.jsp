@@ -8,9 +8,8 @@
   <div class="form-group">
     <label for="userid">User Id</label>
     <input type="text" class="form-control" id="userid" name="userid">
-
   </div>
-  <div class="form-group">
+  <div class="form-group" >
     <label for="password">Password</label>
     <input type="password" class="form-control" id="password" placeholder="password" required="required" name="password">
   </div>

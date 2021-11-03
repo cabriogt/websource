@@ -34,8 +34,8 @@
 	boolean insertFlag = dao.insert(dto);
 	
 	if(insertFlag){
-		response.sendRedirect("index.jsp");
 		JdbcUtil.commit(con);
+		response.sendRedirect("allProcess.jsp");
 	}else{
 		JdbcUtil.rollback(con);
 		response.sendRedirect("insert.jsp");

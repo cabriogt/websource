@@ -4,19 +4,19 @@
 <%@include file="/layout/header.jsp"%>
 
 <div>
-<form action="" method="post">
+<form action="updateProcess.jsp" method="post">
   <div class="form-group">
     <label for="userid">User Id</label>
-    <input type="text" class="form-control" id="userid" >
+    <input type="text" class="form-control" id="userid" name="userid" >
  
   </div>
   <div class="form-group">
-    <label for="password">Password</label>
-    <input type="password" class="form-control" id="password" placeholder="password">
+    <label for="currentPassword">Password</label>
+    <input type="password" class="form-control" id="currentPassword" placeholder="password" name="currentPassword">
   </div>
    <div class="form-group">
-    <label for="password">Change password</label>
-    <input type="password" class="form-control" id="password" placeholder="Change Password">
+    <label for="changePassword">Change password</label>
+    <input type="password" class="form-control" id="changePassword" placeholder="Change Password" name="changePassword">
   </div>
   
   <button type="submit" class="btn btn-primary">Submit</button>

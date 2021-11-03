@@ -16,7 +16,7 @@ crossorigin="anonymous">
 		<div class="topnav">
 		<a href="insert.jsp">Input</a>
 		<a href="update.jsp">Edit</a>
-		<a href="all.jsp">Search all</a>
+		<a href="allProcess.jsp">Search all</a>
 		<a href="select.jsp">Search</a>		
 		</div>
 <%-- each page area--%>

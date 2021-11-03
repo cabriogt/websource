@@ -58,6 +58,17 @@ public class JdbcUtil {
 		}
 	}
 	
+	//resource dismiss
+	public static void close(Connection con) {
+		if (con!=null) {
+			try {
+				con.close();
+			}catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+	
 	public static void  close (PreparedStatement pstmt) {
 		if (pstmt!=null) {
 			try {

@@ -1,7 +1,16 @@
+<%@page import="java.util.List"%>
+<%@page import="user.domain.MemberDTO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
 <%@include file="/layout/header.jsp"%>
+
+<%
+
+List<MemberDTO> list = (List<MemberDTO>)request.getAttribute("list");
+
+
+%>
 
 <table class="table" style="margin-top: 30px">
   <thead class="thead-light">
@@ -13,24 +22,26 @@
     </tr>
   </thead>
   <tbody>
+  <%
+  if(!list.isEmpty()){
+     for (MemberDTO dto:list){ 
+  %>
     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <th scope="row"><%=dto.getUserid() %></th>
+      <td><%=dto.getName() %></td>
+      <td><%=dto.getGender() %></td>
+      <td><%=dto.getEmail() %></td>
     </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
+    <%
+  	}
+  }
+  else{
+	  out.print("<tr>");
+	  out.print("<td colspan='4'>");
+	  out.print("No content");
+	  out.print("</td></tr>");
+  }
+  %>
+   </tbody>
 </table>
 <%@include file="/layout/footer.jsp"%>
